@@ -1,0 +1,174 @@
+<?php session_start();
+if(! isset ($_SESSION['user']))
+{
+	header("Location: indextemp.html");
+	exit;
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ансамбль Квадрат Соло</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css?v17054">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	<script src="js/slider.js" defer></script>
+	<script src="js/confirm.js"></script>
+	<script src="js/scroll.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+  	  (function (d, w, c) {
+    	    (w[c] = w[c] || []).push(function() {
+      	      try {
+        	        w.yaCounter48982007 = new Ya.Metrika({
+          	          id:48982007,
+            	        clickmap:true,
+              	      trackLinks:true,
+                	    accurateTrackBounce:true,
+                  	  webvisor:true
+               	 });
+          	  } catch(e) { }
+      	  });
+
+        	var n = d.getElementsByTagName("script")[0],
+          	  s = d.createElement("script"),
+            	f = function () { n.parentNode.insertBefore(s, n); };
+        	s.type = "text/javascript";
+        	s.async = true;
+        	s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        	if (w.opera == "[object Opera]") {
+          	  d.addEventListener("DOMContentLoaded", f, false);
+        	} else { f(); }
+    	})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/48982007" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+	<script>
+		confirmCheck();
+		scrollAnimate();
+	</script>
+	<script> //футер 152фз
+	(function(){ 
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.async = true;
+		script.charset = 'utf-8';
+		script.src = 'https://152фз.рф/widget/9c68acb023b1697cc360f763ea1958e6';
+		document.getElementsByTagName('head')[0].appendChild(script);
+	})();
+	</script>
+
+	<header>
+		<div class="slideShow">
+			<div class="slide slide__1 ">
+				<div class="slide__text">Игра в группе как уникальный опыт в жизни</div><br>
+			</div>
+
+			<div class="slide slide__2">
+				<div class="slide__text">Успех в жизни через творчество</div><br>
+			</div>
+
+			<div class="slide slide__3">
+				<div class="slide__text">Общение и<br> яркие эмоции</div><br>
+			</div>
+
+			<a class="slide__arrow slide__arrow-prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="slide__arrow slide__arrow-next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="slide__dots">
+				<span class="slide__dot slide__dot-1" onclick="currentSlide(1)"></span>
+				<span class="slide__dot slide__dot-2" onclick="currentSlide(2)"></span>
+				<span class="slide__dot slide__dot-3" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+	</header>
+
+	<section id="mainDescript">
+		<div class="container">
+			<h2 class="mainDescript__title">Ансамбли Квадрат Соло - музыкальные коллективы,
+				в которых может играть каждый, без ограничений по возрасту и уровню игры</h2>
+				<p class="mainDescript__text">Мы объединяем желающих играть музыку в группы по 4 - 8 человек.
+				С каждой группой работает профессиональный музыкант - наставник, который помогает организовать
+			  творческий процесс и выстроить взаимодействие. За короткий срок каждая группа сможет
+		    получить уникальный опыт выступления на сцене.</p>
+		</div>
+	</section>
+
+	<section id="stages">
+		<div class="container">
+			<ul class="stages clearfix mov hidden fadeIn">
+				<li class="stages__item">
+					<div class="stages__icon"><i class="fas fa-edit"></i></div>
+					<p class="stages__title">Регистрация</p>
+					<p class="stages__text">Вход в один клик через соцсеть</p>
+				</li>
+				<li class="stages__item">
+					<i class="fas fa-arrow-down stages__arrow"></i>
+				</li>
+				<li class="stages__item">
+					<div class="stages__icon"><i class="fas fa-phone"></i></div>
+					<p class="stages__title">Связываемся с Вами</p>
+					<p class="stages__text">Уточняем пожелания, музыкальный опыт...</p>
+				</li>
+				<li class="stages__item">
+					<i class="fas fa-arrow-down stages__arrow"></i>
+				</li>
+				<li class="stages__item">
+					<div class="stages__icon"><i class="fas fa-music"></i></div>
+					<p class="stages__title">Приглашаем на репетицию</p>
+					<p class="stages__text">В удобное время на профессионально оборудованную базу, как только набирается подходящая группа</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="login">
+		<div class="registration container">
+			<h2 class="registration__text">
+				<?php
+						echo "Здравствуйте, " . $_SESSION['user']['first_name'] . "!<br>";
+					if (!$_SESSION['isexist']) {
+						echo "Подбираем музыкальную группу для Вас...";
+					}
+					else {
+						echo $_SESSION['comment'];
+					}
+					?>		
+			</h2>
+		</div>
+		<a class="registration__link" href="index.html"><div class="registration__button">Назад</div></a>
+	</section>
+
+<footer>
+		<div class="container">
+			<div class="contacts">
+				<p class="contacts__phone">+7 903 7947169</p>
+				<p class="contacts__email">info@kvadratsolo.ru</p>
+				<div class="contacts__links">
+					<div class="contacts__link"><a href="https://www.facebook.com/kvadratsolo"><i class="fab fa-facebook-f"></i></a></div>
+					<div class="contacts__link"><a href="https://vk.com/kvadratsolo"><i class="fab fa-vk"></i></a></div>
+					<div class="contacts__link"><a href="https://www.youtube.com/user/mstudio1329"><i class="fab fa-youtube"></i></a></div>
+					<div class="contacts__link"><a href="https://www.instagram.com/kvadratsolo/"><i class="fab fa-instagram"></i></a></div>
+				</div>
+				<p class="contacts__copyright">Социально-образовательный проект "Квадрат Соло" 2012-2018 ©</p>
+			</div>
+			<div id="fz_wrap"></div>
+		</div>
+	</footer>
+
+</body>
+</html>

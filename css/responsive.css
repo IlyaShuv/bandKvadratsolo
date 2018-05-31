@@ -1,0 +1,95 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 750px;
+  }
+  .stages__item {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 320px;
+  }
+  .slide {
+    min-height: 400px;
+  }
+  .slide-3 .slide__text {
+    padding-top: 20px;
+  }
+  .slide__button {
+    width: 290px;
+    font-size: 30px;
+    margin-top: 6vh;
+  }
+  .slide__text {
+    margin-top: 25vh;
+    font-size: 33px;
+    width: 260px;
+    height: 130px;
+  }
+  .slide__arrow {
+    font-size: 14px;
+    padding: 11px;
+  }
+  #mainDescript {
+    margin-top: -19px;
+  }
+  .mainDescript__text {
+    font-size: 26px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .mainDescript__title {
+    font-size: 36px;
+  }
+  .stages {
+    margin-left: 0;
+    padding: 0;
+  }
+  .stages__item {
+    margin-left: 15px;
+  }
+  .stages__icon {
+    font-size: 45px;
+    padding: 0;
+  }
+  .stages__arrow {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+  }
+  .stages__title {
+    font-size: 30px;
+    padding-left: 60px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .stages__text {
+    width: 230px;
+    font-size: 20px;
+    padding-left: 60px;
+    margin-bottom: 0;
+  }
+  #login {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .registration h2 {
+    font-size: 32px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .information h2 {
+    font-size: 35px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .information p {
+    font-size: 26px;
+  }
+  #information {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
