@@ -13,8 +13,8 @@ if(! isset ($_SESSION['user']))
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css?v17054">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css?v2305">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css?v23052">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
@@ -74,15 +74,15 @@ if(! isset ($_SESSION['user']))
 
 	<header>
 		<div class="slideShow">
-			<div class="slide slide__1 ">
+			<div class="slide slide-1 ">
 				<div class="slide__text">Игра в группе как уникальный опыт в жизни</div><br>
 			</div>
 
-			<div class="slide slide__2">
+			<div class="slide slide-2">
 				<div class="slide__text">Успех в жизни через творчество</div><br>
 			</div>
 
-			<div class="slide slide__3">
+			<div class="slide slide-3">
 				<div class="slide__text">Общение и<br> яркие эмоции</div><br>
 			</div>
 
@@ -110,7 +110,7 @@ if(! isset ($_SESSION['user']))
 
 	<section id="stages">
 		<div class="container">
-			<ul class="stages clearfix mov hidden fadeIn">
+			<ul class="stages clearfix mov hidden">
 				<li class="stages__item">
 					<div class="stages__icon"><i class="fas fa-edit"></i></div>
 					<p class="stages__title">Регистрация</p>
